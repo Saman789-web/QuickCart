@@ -1,5 +1,5 @@
 import { serve } from "inngest/next";
-import { syncUserCreation,syncUserUpdation,syncUserDeletion } from "@/config/inngest/functions";
+import {inngest, syncUserCreation,syncUserUpdation,syncUserDeletion } from "@/config/inngest";
 
 
 

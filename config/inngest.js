@@ -1,6 +1,7 @@
 import { Inngest } from "inngest";
-import connectDB from "./db";
-import User from '@/models/User'
+import connectDB from "@/config/db";
+import User from "@/models/user";
+
 
 
 
@@ -25,6 +26,7 @@ export const syncUserCreation = inngest.createFunction(
                 imageUrl:image_url,
         }
         await connectDB()
+        // await User.create(userData)
         await User.create(userData)
     }
 )
